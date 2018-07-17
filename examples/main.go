@@ -9,7 +9,8 @@ import (
 
 func main() {
 	client := wakatime.NewClient("<YOUR API KEY>")
-	summaries, err := client.GetLast7Days()
+	dayStr := "2018-07-16"
+	summaries, err := client.GetSummaries(dayStr, dayStr)
 	if err != nil {
 		panic(err)
 	}
