@@ -3,14 +3,15 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"time"
 
 	wakatime "github.com/70-10/go-wakatime"
 )
 
 func main() {
 	client := wakatime.NewClient("<YOUR API KEY>")
-	dayStr := "2018-07-16"
-	summaries, err := client.GetSummaries(dayStr, dayStr)
+	today := time.Now().Format("2006-01-02")
+	summaries, err := client.GetSummaries(today, today)
 	if err != nil {
 		panic(err)
 	}
