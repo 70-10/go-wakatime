@@ -31,7 +31,7 @@ type Category struct {
 	Percent      float64 `json:"percent"`
 	Seconds      int     `json:"seconds"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type Dependency struct {
@@ -41,7 +41,7 @@ type Dependency struct {
 	Name         string  `json:"name"`
 	Percent      float64 `json:"percent"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type Editor struct {
@@ -52,15 +52,15 @@ type Editor struct {
 	Percent      float64 `json:"percent"`
 	Seconds      int     `json:"seconds"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type GrandTotal struct {
-	Digital      string `json:"digital"`
-	Hours        int    `json:"hours"`
-	Minutes      int    `json:"minutes"`
-	Text         string `json:"text"`
-	TotalSeconds int    `json:"total_seconds"`
+	Digital      string  `json:"digital"`
+	Hours        int     `json:"hours"`
+	Minutes      int     `json:"minutes"`
+	Text         string  `json:"text"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type Language struct {
@@ -71,7 +71,7 @@ type Language struct {
 	Percent      float64 `json:"percent"`
 	Seconds      int     `json:"seconds"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type OperatingSystem struct {
@@ -82,7 +82,7 @@ type OperatingSystem struct {
 	Percent      float64 `json:"percent"`
 	Seconds      int     `json:"seconds"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type Project struct {
@@ -93,7 +93,7 @@ type Project struct {
 	Percent      float64 `json:"percent"`
 	Seconds      int     `json:"seconds"`
 	Text         string  `json:"text"`
-	TotalSeconds int     `json:"total_seconds"`
+	TotalSeconds float64 `json:"total_seconds"`
 }
 
 type Range struct {
